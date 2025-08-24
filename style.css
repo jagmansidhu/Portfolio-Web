@@ -81,7 +81,7 @@ article,
 .logo-container,
 .portfolio,
 .skills {
-  gap: 1rem;
+  gap: .5rem;
 }
 
 .hero-pic {
@@ -126,8 +126,13 @@ article p,
   color: var(--secondary-color);
 }
 
+.hero-info h1 {
+  font-size: 4rem;
+  font-weight: 400;
+}
+
 .hero-info h2 {
-  font-size: 1rem;
+  font-size: 2rem;
   margin: 0 0 1rem 0;
 }
 
@@ -267,6 +272,7 @@ footer,
 .btn-bg,
 .wrapper {
   width: 20rem;
+  align-items: flex-start;
 }
 
 article p,
@@ -281,7 +287,9 @@ article p,
 }
 
 .skills {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .wrapper img {
@@ -300,7 +308,7 @@ article {
 article p {
   border-radius: 0.5rem;
   flex-grow: 20;
-  padding: 1rem;
+  padding: .75rem;
 }
 
 footer {
@@ -312,6 +320,8 @@ footer {
   .portfolio {
     flex-direction: row;
     width: 45rem;
+    justify-content: center;
+    align-items: flex-start;
   }
   .skills {
     margin: 2rem auto 0;
